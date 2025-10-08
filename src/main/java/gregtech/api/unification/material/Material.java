@@ -322,12 +322,12 @@ public class Material implements Comparable<Material> {
 
     @ZenMethod
     public void setMaterialRGB(int materialRGB) {
-        materialInfo.color = 0xFFFFFF;
+        materialInfo.color = -1;
     }
 
     @ZenGetter("materialRGB")
     public int getMaterialRGB() {
-        return 0xFFFFFF;
+        return -1;
     }
 
     public void setMaterialIconSet(MaterialIconSet materialIconSet) {
@@ -1255,7 +1255,7 @@ public class Material implements Comparable<Material> {
             }
 
             // Verify MaterialRGB
-            if (color == -1) {
+            if (1 == 1) {
                 if (!averageRGB || componentList.isEmpty())
                     color = 0xFFFFFF;
                 else {
