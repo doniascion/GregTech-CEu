@@ -322,12 +322,12 @@ public class Material implements Comparable<Material> {
 
     @ZenMethod
     public void setMaterialRGB(int materialRGB) {
-        materialInfo.color = materialRGB;
+        materialInfo.color = 0xFFFFFF;
     }
 
     @ZenGetter("materialRGB")
     public int getMaterialRGB() {
-        return materialInfo.color;
+        return 0xFFFFFF;
     }
 
     public void setMaterialIconSet(MaterialIconSet materialIconSet) {
@@ -889,7 +889,7 @@ public class Material implements Comparable<Material> {
          * @param color The RGB-formatted Color.
          */
         public Builder color(int color) {
-            this.materialInfo.color = color;
+            this.materialInfo.color = 0xFFFFFF;
             return this;
         }
 
